@@ -1,0 +1,218 @@
+{
+    "total_rows_raw": 7525,
+    "total_rows_clean": 7500,
+    "nulls_count": {
+        "id_cliente": 0,
+        "edad": 0,
+        "genero": 0,
+        "estado_civil": 0,
+        "nivel_educativo": 0,
+        "tipo_vivienda": 0,
+        "tipo_trabajo": 0,
+        "antiguedad_laboral": 0,
+        "ingreso_mensual": 0,
+        "monto_credito": 0,
+        "plazo_meses": 0,
+        "cuota_mensual": 0,
+        "score_credito_buro": 0,
+        "num_creditos_previos": 0,
+        "creditos_previos_pagados_ok": 0,
+        "mora_maxima_historica": 0,
+        "posee_garantia": 0,
+        "valor_garantia": 0,
+        "gastos_familiares_mensuales": 15,
+        "tarjeta_credito_activa": 0,
+        "default": 0
+    },
+    "nulls_pct": {
+        "id_cliente": 0.0,
+        "edad": 0.0,
+        "genero": 0.0,
+        "estado_civil": 0.0,
+        "nivel_educativo": 0.0,
+        "tipo_vivienda": 0.0,
+        "tipo_trabajo": 0.0,
+        "antiguedad_laboral": 0.0,
+        "ingreso_mensual": 0.0,
+        "monto_credito": 0.0,
+        "plazo_meses": 0.0,
+        "cuota_mensual": 0.0,
+        "score_credito_buro": 0.0,
+        "num_creditos_previos": 0.0,
+        "creditos_previos_pagados_ok": 0.0,
+        "mora_maxima_historica": 0.0,
+        "posee_garantia": 0.0,
+        "valor_garantia": 0.0,
+        "gastos_familiares_mensuales": 0.2,
+        "tarjeta_credito_activa": 0.0,
+        "default": 0.0
+    },
+    "dup_count": 25,
+    "dup_pct": 0.33,
+    "descriptive_stats": {
+        "edad": {
+            "count": 7500,
+            "mean": 42.31,
+            "std": 14.37,
+            "min": 18.0,
+            "25%": 30.0,
+            "50%": 42.0,
+            "75%": 55.0,
+            "max": 67.0
+        },
+        "antiguedad_laboral": {
+            "count": 7500,
+            "mean": 4.95,
+            "std": 4.89,
+            "min": 0.5,
+            "25%": 1.4,
+            "50%": 3.4,
+            "75%": 6.9,
+            "max": 35.0
+        },
+        "ingreso_mensual": {
+            "count": 7500,
+            "mean": 766.54,
+            "std": 387.73,
+            "min": 350.0,
+            "25%": 482.54,
+            "50%": 674.77,
+            "75%": 944.02,
+            "max": 3898.18
+        },
+        "monto_credito": {
+            "count": 7500,
+            "mean": 3636.1,
+            "std": 2374.08,
+            "min": 526.99,
+            "25%": 1944.58,
+            "50%": 3019.71,
+            "75%": 4708.96,
+            "max": 15000.0
+        },
+        "plazo_meses": {
+            "count": 7500,
+            "mean": 21.94,
+            "std": 13.01,
+            "min": 6.0,
+            "25%": 12.0,
+            "50%": 18.0,
+            "75%": 24.0,
+            "max": 60.0
+        },
+        "cuota_mensual": {
+            "count": 7500,
+            "mean": 262.94,
+            "std": 244.57,
+            "min": 13.48,
+            "25%": 108.9,
+            "50%": 186.11,
+            "75%": 330.64,
+            "max": 2632.88
+        },
+        "score_credito_buro": {
+            "count": 7500,
+            "mean": 650.88,
+            "std": 84.79,
+            "min": 300.0,
+            "25%": 593.0,
+            "50%": 652.0,
+            "75%": 709.0,
+            "max": 850.0
+        },
+        "gastos_familiares_mensuales": {
+            "count": 7500,
+            "mean": 403.43,
+            "std": 221.28,
+            "min": 122.55,
+            "25%": 241.74,
+            "50%": 350.96,
+            "75%": 499.26,
+            "max": 2015.7
+        },
+        "valor_garantia": {
+            "count": 7500,
+            "mean": 2049.99,
+            "std": 3226.59,
+            "min": 0.0,
+            "25%": 0.0,
+            "50%": 0.0,
+            "75%": 3358.92,
+            "max": 24899.66
+        }
+    },
+    "test_metrics": {
+        "Regresión Logística": {
+            "Accuracy": 0.922,
+            "Precision": 0.8419,
+            "Recall": 0.7112,
+            "F1-Score": 0.771,
+            "AUC-ROC": 0.9553
+        },
+        "Árbol de Decisión": {
+            "Accuracy": 0.876,
+            "Precision": 0.7725,
+            "Recall": 0.4657,
+            "F1-Score": 0.5811,
+            "AUC-ROC": 0.8933
+        },
+        "Random Forest": {
+            "Accuracy": 0.8913,
+            "Precision": 0.8476,
+            "Recall": 0.5018,
+            "F1-Score": 0.6304,
+            "AUC-ROC": 0.9347
+        }
+    },
+    "cv_metrics": {
+        "Regresión Logística": {
+            "CV Accuracy Mean": 0.9138,
+            "CV Accuracy Std": 0.0051,
+            "CV F1 Mean": 0.7502,
+            "CV F1 Std": 0.0134,
+            "CV AUC-ROC Mean": 0.9557,
+            "CV AUC-ROC Std": 0.005
+        },
+        "Árbol de Decisión": {
+            "CV Accuracy Mean": 0.8825,
+            "CV Accuracy Std": 0.0067,
+            "CV F1 Mean": 0.6393,
+            "CV F1 Std": 0.0258,
+            "CV AUC-ROC Mean": 0.9019,
+            "CV AUC-ROC Std": 0.009
+        },
+        "Random Forest": {
+            "CV Accuracy Mean": 0.8918,
+            "CV Accuracy Std": 0.0066,
+            "CV F1 Mean": 0.6395,
+            "CV F1 Std": 0.0241,
+            "CV AUC-ROC Mean": 0.9359,
+            "CV AUC-ROC Std": 0.0043
+        }
+    },
+    "best_model": "Regresión Logística",
+    "top_10_features": [
+        "Ratio_Cuota_Ingreso",
+        "mora_maxima_historica_Sin_Mora",
+        "Indice_Capacidad_Pago",
+        "mora_maxima_historica_61_90_dias",
+        "score_credito_buro",
+        "cuota_mensual",
+        "plazo_meses",
+        "mora_maxima_historica_31_60_dias",
+        "antiguedad_laboral",
+        "Cobertura_Garantia"
+    ],
+    "top_10_importances": [
+        0.1801,
+        0.117,
+        0.1159,
+        0.0995,
+        0.07,
+        0.0606,
+        0.0595,
+        0.042,
+        0.037,
+        0.0266
+    ]
+}
